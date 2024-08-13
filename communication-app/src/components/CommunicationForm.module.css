@@ -1,0 +1,122 @@
+/* Container for the form */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Heading style */
+  h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  
+  /* Button container */
+  .buttonContainer {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .actionButton {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px; /* Vertical and horizontal padding */
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    background: green;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 500px; /* Maximum width for responsiveness */
+    margin: 10px auto; /* Centered with space around */
+  }
+  /* Base button styling */
+  .button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* WhatsApp button styling */
+  .whatsappButton {
+    background: linear-gradient(145deg, #25D366, #128C7E);
+  }
+  
+  /* Email button styling */
+  .emailButton {
+    background: linear-gradient(145deg, #FF6F61, #E57373);
+  }
+  
+  /* Call button styling */
+  .callButton {
+    background: linear-gradient(145deg, #4285F4, #357AE8);
+  }
+  
+  /* Button hover effect */
+  .button:hover {
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), -2px -2px 6px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  
+  /* Input and textarea styling */
+  input[type="text"], input[type="email"], textarea {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.1), inset -4px -4px 8px rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  /* Input and textarea focus effect */
+  input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Section visibility */
+  .section {
+    display: none;
+    width: 100%;
+  }
+  
+  /* Section visible */
+  .section:not(.hidden) {
+    display: block;
+  }
+  
+  /* Hidden class */
+  .hidden {
+    display: none;
+  }
+  
+  /* Animation for fading in */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
